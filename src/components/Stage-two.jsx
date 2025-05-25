@@ -7,14 +7,14 @@ const Stage2 = () => {
     <>
       <div className="result_wrapper">
         <h3>The Looser is:</h3>
-        {context.result}
+        <h2 className="result-name">{context.result}</h2>
       </div>
-      <div className="action_button" onClick={context.resetGame}>
+      <button className="action_button" onClick={context.resetGame}>
         START OVER
-      </div>
-      <div className="action_button btn_2" onClick={context.getLoser}>
+      </button>
+      <button className="action_button btn_2" onClick={context.getLoser}>
         GET NEW LOSER
-      </div>
+      </button>
     </>
   );
 };
